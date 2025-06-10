@@ -1,0 +1,60 @@
+* {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.board_game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 2px solid black;
+}
+
+[id^='grid_move'] {
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#player_move {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#reset_game_btn {
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+    border-color: 2px solid black;
+    height: 70px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+#reset_game_btn:hover {
+    background-color: gray;
+    color: white;
+}
+
+#reset_game_btn:active {
+    background-color: black;
+    color: white;
+}
