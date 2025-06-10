@@ -65,7 +65,7 @@ function gameBoard() {
                 }
             }
         }
-        return 2;
+        return 0;
     }
     // Assign cell value method 
     const assignValue = (i, j, moveValue) => {
